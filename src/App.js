@@ -3,6 +3,7 @@ import './App.css';
 import Todolist from './todoitem';
 import Header from "./header"
 import Footer from "./footer"
+import Additem from './additem';
 
 class App extends React.Component {
 
@@ -42,15 +43,7 @@ class App extends React.Component {
                     {todoItemJSX}
                 </div>
 
-                <div className="addinput">
-                    <input className="inputbox" type="text" placeholder="Enter Title"></input>
-                     <br></br>
-                    <input className="inputbox" type="text" placeholder="Enter Description"></input>
-                    <br></br>
-                    <input className="inputbox" type="text" placeholder="Enter Deadline"></input>
-                    <br></br>
-                    <button id="addtaskbtn">Add New Task</button>
-                </div>
+                   <Additem/>     
 
             </div>
             <Footer/>
